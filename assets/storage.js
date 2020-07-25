@@ -51,3 +51,7 @@ function renderHistory() {
         historyList.appendChild(row);
     }
 }
+
+/* agar data history muncul ketika
+website pertama kali dijalankan.*/
+renderHistory();
