@@ -68,3 +68,13 @@ function inverseNumber() {
     }
     calculator.displayNumber = calculator.displayNumber * -1;
 }
+
+function handleOperator(operator) {
+    if (!calculator.waitingForSecondNumber) {
+        calculator.operator = operator;
+        calculator.waitingForSecondNumber = true;
+        calculator.firstNumber = calculator.displayNumber;
+    } else {
+        alert('Operator sudah ditetapkan')
+    }
+ }
