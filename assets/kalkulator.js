@@ -62,8 +62,9 @@ function performCalculation() {
     calculator.displayNumber = result;
 }
 
-// .button event listener
+// ambil semua .button, untuk...
 const buttons = document.querySelectorAll(".button");
+// ... dipasang event listener 'click' ke setiap .button
 for (let button of buttons) {
     button.addEventListener('click', function (event) {
 
