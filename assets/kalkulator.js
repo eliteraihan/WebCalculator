@@ -61,3 +61,10 @@ for (let button of buttons) {
         updateDisplay()
     });
 }
+
+function inverseNumber() {
+    if (calculator.displayNumber === '0') {
+        return;
+    }
+    calculator.displayNumber = calculator.displayNumber * -1;
+}
