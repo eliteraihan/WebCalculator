@@ -39,14 +39,16 @@
     </div>
 
     <div class="history card">
-        <!-- h2{Riwayat Perhitungan}+table>(thead>tr*4{link_$})+tbody#historyList -->
+        <!-- h2{Riwayat Perhitungan}+table>(thead>tr>th*4{link_$})+tbody#historyList -->
         <h2>Riwayat Perhitungan</h2>
         <table>
             <thead>
-                <tr>Angka Pertama</tr>
-                <tr>Operator</tr>
-                <tr>Angka Kedua</tr>
-                <tr>Hasil</tr>
+                <tr>
+                    <th>Angka Pertama</th>
+                    <th>Operator</th>
+                    <th>Angka Kedua</th>
+                    <th>Hasil</th>
+                </tr>
             </thead>
             <tbody id="historyList"></tbody>
         </table>
