@@ -25,7 +25,7 @@ function inputDigit(digit) {
     }
 }
 
-
+// .button event listener
 const buttons = document.querySelectorAll(".button");
 for (let button of buttons) {
     button.addEventListener('click', function (event) {
@@ -35,6 +35,24 @@ for (let button of buttons) {
 
         if (target.classList.contains('clear')) {
             clearCalculator();
+            updateDisplay();
+            return;
+        }
+
+        if (target.classList.contains('negative')) {
+            inverseNumber();
+            updateDisplay();
+            return;
+        }
+
+        if (target.classList.contains('equals')) {
+            performCalculation();
+            updateDisplay();
+            return;
+        }
+
+        if (target.classList.contains('operator')) {
+            handleOperator(target.innerText)
             updateDisplay();
             return;
         }
